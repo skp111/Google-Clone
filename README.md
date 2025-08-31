@@ -23,6 +23,6 @@ This project replicates the UI and some interactive features of Google’s homep
 
 ## 🛠️ Technologies Used
 - **HTML5** – Structure  
-- **Tailwind CSS** – Styling & responsiveness  
+- **Tailwind CSS** – Styling
 - **JavaScript** – Interactivity (theme switch, dropdowns)  
 - **Boxicons** – Icons  
