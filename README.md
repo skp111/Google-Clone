@@ -6,7 +6,7 @@ This project replicates the UI and some interactive features of Google’s homep
 ---
 
 ## 🚀 Live Demo
-[Click here to view the deployed site](#)  
+[[Click here to view the deployed site](https://google-indexpage.netlify.app/)](#)  
 
 ---
 
