@@ -1,0 +1,231 @@
+<!-- 
+For tailwind css enable tailwind css intellisence and disable css intellisence and vice versa for using bootstrap
+step1: open project(Here Google-Clone) terminal and paste: npm install tailwindcss @tailwindcss/cli 
+step2: in style.css write this: @import "tailwindcss";
+step3: in style.css terminal(right click on style.css file then click on integrated terminal) write this: 
+ npx @tailwindcss/cli -i ./style.css -o ./output.css --watch
+step4: in link:css href='output.css' (not style.css)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel='stylesheet' href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css'>
+    <link rel='stylesheet' href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css'>
+    <link rel="shortcut icon" href="google.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="body">
+    <header>
+        <div class="head">
+            <div class="flex gap-5">
+                <a href="https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header"
+                    class="effect">About</a>
+                <a href="https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN"
+                    class="effect">Store</a>
+            </div>
+            <div class="flex gap-5">
+                <a href="https://www.google.com/gmail/about/policy/" class="effect">Gmail</a>
+                <a href="https://www.google.com/imghp?hl=en&ogbl" class="effect">Images</a>
+
+                <a href="https://labs.google/" class="relative group">
+                    <i class='bx bxs-medical-flask icon'></i>
+                    <div class="lab-app">
+                        Search Labs
+                    </div>
+                </a>
+
+                <a href="https://store.google.com/in/?hl=en-IN" class="relative group">
+                    <i class='bx  bxs-apps icon'></i>
+                    <div class="lab-app">
+                        Google Apps
+                    </div>
+                </a>
+
+                <i class='bx bxs-user-circle account group'>
+                    <div class="user-account">
+                        Google Account <br>
+                        User name <br>
+                        user@gmail.com
+                    </div>
+                </i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="middle">
+            <svg class="lnXdpd google-dark" height="92" viewBox="0 0 272 92" width="272"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44zm57.74 0c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44zm55.74-20.84v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36zM225 3v65h-9.5V3h9.5zm37.02 51.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93zM35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z"
+                    fill="#FFF"></path>
+            </svg>
+            <svg class="lnXdpd hidden google-light" aria-label="Google" height="92" role="img" viewBox="0 0 272 92"
+                width="272" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"
+                    fill="#EA4335"></path>
+                <path
+                    d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"
+                    fill="#FBBC05"></path>
+                <path
+                    d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z"
+                    fill="#4285F4"></path>
+                <path d="M225 3v65h-9.5V3h9.5z" fill="#34A853"></path>
+                <path
+                    d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z"
+                    fill="#EA4335"></path>
+                <path
+                    d="M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z"
+                    fill="#4285F4"></path>
+            </svg>
+            <div class="search-full">
+                <input type="text" placeholder="" class="search-input">
+                <i class='bx  bx-search search-icon left-4'></i>
+                <i class='bx  bxs-microphone search-icon right-[15vw] group'>
+                    <div class="voice-image">
+                        Search by voice
+                    </div>
+                </i>
+                <i class='bx  bxs-scan-search search-icon right-[12vw] group'>
+                    <div class="voice-image">
+                        Search by image
+                    </div>
+                </i>
+                <div class="ai-mode">
+                    <i class='bx  bx-search-plus text-xl'></i>
+                    <p class="text-md">AI Mode</p>
+                </div>
+            </div>
+            <div class="flex gap-5">
+                <button class="button">Google Search</button>
+                <button class="button">I'm Feeling Lucky</button>
+            </div>
+            <div class="flex gap-1.5">
+                <p class="offered">Google offered in:</p>
+                <ul class="flex gap-1">
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_bglcy-fuzde7N_7hxSgXyHALFas%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwiQnOn02q2PAxUss1YBHUZVH2oQ2ZgBCCY">
+                        <li class="language">বাংলা</li>
+                    </a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_bglcy-fuzde7N_7hxSgXyHALFas%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwiQnOn02q2PAxUss1YBHUZVH2oQ2ZgBCCc">
+                        <li class="language">తెలుగు</li>
+                    </a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_bglcy-fuzde7N_7hxSgXyHALFas%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwiQnOn02q2PAxUss1YBHUZVH2oQ2ZgBCCg">
+                        <li class="language">मराठी</li>
+                    </a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_bglcy-fuzde7N_7hxSgXyHALFas%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwiQnOn02q2PAxUss1YBHUZVH2oQ2ZgBCCU">
+                        <li class="language">हिन्दी</li>
+                    </a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_bglcy-fuzde7N_7hxSgXyHALFas%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwiQnOn02q2PAxUss1YBHUZVH2oQ2ZgBCCk">
+                        <li class="language">தமிழ்</li>
+                    </a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_bglcy-fuzde7N_7hxSgXyHALFas%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwiQnOn02q2PAxUss1YBHUZVH2oQ2ZgBCCo">
+                        <li class="language">ગુજરાતી</li>
+                    </a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_bglcy-fuzde7N_7hxSgXyHALFas%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwiQnOn02q2PAxUss1YBHUZVH2oQ2ZgBCCs">
+                        <li class="language">ಕನ್ನಡ</li>
+                    </a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_bglcy-fuzde7N_7hxSgXyHALFas%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwiQnOn02q2PAxUss1YBHUZVH2oQ2ZgBCCw">
+                        <li class="language">മലയാളം</li>
+                    </a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_bglcy-fuzde7N_7hxSgXyHALFas%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwiQnOn02q2PAxUss1YBHUZVH2oQ2ZgBCC0">
+                        <li class="language">ਪੰਜਾਬੀ</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="india">
+            India
+        </div>
+        <div class="end">
+            <ul class="left-footer">
+                <a
+                    href="https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
+                    <li class="effect">Advertising</li>
+                </a>
+                <a
+                    href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">
+                    <li class="effect">Business</li>
+                </a>
+                <a href="https://google.com/search/howsearchworks/?fg=1">
+                    <li class="effect">How Search works</li>
+                </a>
+            </ul>
+            <ul class="right-footer">
+                <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">
+                    <li class="effect">Privacy</li>
+                </a>
+                <a href="https://policies.google.com/terms?hl=en-IN&fg=1">
+                    <li class="effect">Terms</li>
+                </a>
+                <li class="effect relative">
+                    <span class="setting">Settings</span>
+                    <ul class='setting-options hidden'>
+                        <a href="https://www.google.com/preferences?hl=en-IN&fg=1">
+                            <li class="setting-inside">Search settings</li>
+                        </a>
+                        <a href="https://www.google.com/advanced_search?hl=en-IN&fg=1">
+                            <li class="setting-inside">Advanced search</li>
+                        </a>
+                        <a href="https://myactivity.google.com/privacyadvisor/search?utm_source=googlemenu&fg=1">
+                            <li class="setting-inside">Your data in Search</li>
+                        </a>
+                        <a href="https://myactivity.google.com/product/search?utm_source=google&hl=en-IN&fg=1">
+                            <li class="setting-inside">Search history</li>
+                        </a>
+                        <a href="https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1">
+                            <li class="setting-inside">Search help</li>
+                        </a>
+                        <li class="setting-inside">Send feedback</li>
+                        <hr class="border-gray-700">
+                        <li class="theme group">Dark Theme: On <i class='bx  bxs-moon theme-icon'></i></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        let setting = document.querySelector('.setting');
+        let settingOptions = document.querySelector('.setting-options');
+        setting.addEventListener('click', () => {
+            settingOptions.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!setting.contains(e.target)) 
+                settingOptions.classList.add('hidden');
+        });
+
+        let theme = document.querySelector('.theme');
+        let googleDark = document.querySelector('.google-dark');
+        let googleLight = document.querySelector('.google-light');
+        theme.addEventListener('click', () => {
+            if (document.body.classList.contains('light')) {
+                theme.innerHTML = `Dark Theme: On <i class='bx  bxs-moon theme-icon'></i>`;
+            } else {
+                theme.innerHTML = `Dark Theme: Off <i class='bx  bxs-sun theme-icon'></i>`;
+            }
+            document.body.classList.toggle('light');
+            googleDark.classList.toggle('hidden');
+            googleLight.classList.toggle('hidden');
+        })
+    </script>
+</body>
+
+</html>
