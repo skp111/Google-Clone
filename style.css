@@ -1,37 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Martel+Sans:wght@600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap');
 @import "tailwindcss";
 
-
 @theme {
         --color-google: #1f1f1f;
 }
-
-/* 
-:root{
-    --sameer-color: #012345;
-}
-text-[var(--sameer-color)] in html content or use,
-text-[#012345]
-
-*/
-
-/*Using tailwind css removes all properties of elements*/
-
-/* for changing default functions use below code*/
-/*
-@layer base{
-    h1{
-        @apply text-2xl;
-    }
-    button{
-        @apply h-5 w-10 bg-blue-500 rounded text-white hover:bg-blue-700;  /*used under flex that's why h and w is need to be defined
-    }
-}
-*/
-
-/*for making custom classes use below code*/
-
-
 
 @layer components{
     .light.body{
@@ -79,6 +51,7 @@ text-[#012345]
     .light .setting-inside{
         @apply hover:bg-neutral-300;
     }
+        
     .body{
         @apply bg-google text-[14px] font-sans
     }
@@ -155,4 +128,5 @@ text-[#012345]
         @apply text-lg translate-y-0.5 !hidden group-hover:!inline-block text-white;
     }
 }
+
 
