@@ -11,6 +11,7 @@ This project replicates the UI and some interactive features of Google’s homep
 ---
 
 ## ✨ Features
+- 🔹 Desktop-mode only
 - 🔹 Google-like header with navigation links  
 - 🔹 Search bar with icons (search, voice search, image search)  
 - 🔹 AI Mode button (UI element)  
