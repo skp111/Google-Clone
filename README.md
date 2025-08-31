@@ -18,7 +18,6 @@ This project replicates the UI and some interactive features of Google’s homep
 - 🔹 Footer with links & settings menu  
 - 🔹 **Dark/Light mode toggle** with smooth transition  
 - 🔹 Hover tooltips for apps & account section  
-- 🔹 Responsive design using Tailwind CSS  
 
 ---
 
